@@ -1,0 +1,11 @@
+C:\Users\rdell\source\repos\ColorGetter\ColorGetter\bin\Debug\ColorGetter.exe.config
+C:\Users\rdell\source\repos\ColorGetter\ColorGetter\bin\Debug\ColorGetter.exe
+C:\Users\rdell\source\repos\ColorGetter\ColorGetter\bin\Debug\ColorGetter.pdb
+C:\Users\rdell\source\repos\ColorGetter\ColorGetter\obj\Debug\ColorGetter.csproj.AssemblyReference.cache
+C:\Users\rdell\source\repos\ColorGetter\ColorGetter\obj\Debug\ColorGetter.csproj.SuggestedBindingRedirects.cache
+C:\Users\rdell\source\repos\ColorGetter\ColorGetter\obj\Debug\ColorGetter.Form1.resources
+C:\Users\rdell\source\repos\ColorGetter\ColorGetter\obj\Debug\ColorGetter.Properties.Resources.resources
+C:\Users\rdell\source\repos\ColorGetter\ColorGetter\obj\Debug\ColorGetter.csproj.GenerateResource.cache
+C:\Users\rdell\source\repos\ColorGetter\ColorGetter\obj\Debug\ColorGetter.csproj.CoreCompileInputs.cache
+C:\Users\rdell\source\repos\ColorGetter\ColorGetter\obj\Debug\ColorGetter.exe
+C:\Users\rdell\source\repos\ColorGetter\ColorGetter\obj\Debug\ColorGetter.pdb
