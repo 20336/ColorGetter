@@ -21,6 +21,22 @@ namespace ColorGetter
 
         private void btnColor_Click(object sender, EventArgs e)
         {
+            colorSet();
+
+        }
+        private void btnRandom_Click(object sender, EventArgs e)
+        {
+            string[] hexCodes = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f" };
+            
+           
+            string hex = hexCodes[ranInt(hexCodes.Length)] + hexCodes[ranInt(hexCodes.Length)] + hexCodes[ranInt(hexCodes.Length)] + hexCodes[ranInt(hexCodes.Length)] + hexCodes[ranInt(hexCodes.Length)] + hexCodes[ranInt(hexCodes.Length)];
+            
+            txtHex.Text = hex.ToString();
+            colorSet();
+        }
+
+        private void colorSet()
+        {
             string hex = txtHex.Text;
             string redString = hex.Substring(0, 2);
             string greenString = hex.Substring(2, 2);
@@ -35,16 +51,6 @@ namespace ColorGetter
             txtG.Text = green.ToString();
             txtB.Text = blue.ToString();
             colorBox.BackColor = Color.FromArgb(red, green, blue);
-        }
-        private void btnRandom_Click(object sender, EventArgs e)
-        {
-            string[] hexCodes = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f" };
-            
-           
-            string hex = hexCodes[ranInt(hexCodes.Length)] + hexCodes[ranInt(hexCodes.Length)] + hexCodes[ranInt(hexCodes.Length)] + hexCodes[ranInt(hexCodes.Length)] + hexCodes[ranInt(hexCodes.Length)] + hexCodes[ranInt(hexCodes.Length)];
-            
-            txtHex.Text = hex.ToString();
-
         }
 
         public int ranInt(int length)
