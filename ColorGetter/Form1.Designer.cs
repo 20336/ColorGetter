@@ -37,6 +37,7 @@
             this.txtG = new System.Windows.Forms.TextBox();
             this.txtB = new System.Windows.Forms.TextBox();
             this.btnRandom = new System.Windows.Forms.Button();
+            this.lstColors = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -108,7 +109,7 @@
             // 
             // btnRandom
             // 
-            this.btnRandom.Location = new System.Drawing.Point(87, 405);
+            this.btnRandom.Location = new System.Drawing.Point(90, 405);
             this.btnRandom.Name = "btnRandom";
             this.btnRandom.Size = new System.Drawing.Size(68, 23);
             this.btnRandom.TabIndex = 8;
@@ -116,11 +117,21 @@
             this.btnRandom.UseVisualStyleBackColor = true;
             this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
             // 
+            // lstColors
+            // 
+            this.lstColors.FormattingEnabled = true;
+            this.lstColors.Location = new System.Drawing.Point(12, 58);
+            this.lstColors.Name = "lstColors";
+            this.lstColors.Size = new System.Drawing.Size(146, 342);
+            this.lstColors.TabIndex = 9;
+            this.lstColors.SelectedIndexChanged += new System.EventHandler(this.lstColors_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(617, 440);
+            this.Controls.Add(this.lstColors);
             this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.txtB);
             this.Controls.Add(this.txtG);
@@ -148,6 +159,7 @@
         private System.Windows.Forms.TextBox txtG;
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.Button btnRandom;
+        private System.Windows.Forms.ListBox lstColors;
     }
 }
 

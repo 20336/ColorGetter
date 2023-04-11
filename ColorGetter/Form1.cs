@@ -38,6 +38,9 @@ namespace ColorGetter
         private void colorSet()
         {
             string hex = txtHex.Text;
+
+            lstColors.Items.Add(hex);
+
             string redString = hex.Substring(0, 2);
             string greenString = hex.Substring(2, 2);
             string blueString = hex.Substring(4);
@@ -115,5 +118,9 @@ namespace ColorGetter
             return dec;
         }
 
+        private void lstColors_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtHex.Text = lstColors.Text.ToString();
+        }
     }
 }
