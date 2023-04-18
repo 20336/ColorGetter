@@ -39,7 +39,7 @@ namespace ColorGetter
         {
             string hex = txtHex.Text;
 
-            lstColors.Items.Add(hex);
+            lstColors.Items.Add((lstColors.Items.Count+1) + ") " + hex);
 
             string redString = hex.Substring(0, 2);
             string greenString = hex.Substring(2, 2);
@@ -53,7 +53,10 @@ namespace ColorGetter
             txtR.Text = red.ToString();
             txtG.Text = green.ToString();
             txtB.Text = blue.ToString();
+
             colorBox.BackColor = Color.FromArgb(red, green, blue);
+
+            compCalc(red, green, blue);
         }
 
         public int ranInt(int length)
@@ -120,7 +123,21 @@ namespace ColorGetter
 
         private void lstColors_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtHex.Text = lstColors.Text.ToString();
+            string[] lstString = lstColors.Text.ToString().Split(' ');
+            txtHex.Text = lstString[1];
+        }
+
+        private void compCalc(int r, int g, int b)
+        {
+            int compR = 255 - r;
+            int compG = 255 - g;
+            int compB = 255 - b;
+
+            txtCompR.Text = compR.ToString();
+            txtCompG.Text = compG.ToString();
+            txtCompB.Text = compB.ToString();
+
+            compColorBox.BackColor = Color.FromArgb(compR, compG, compB);
         }
     }
 }

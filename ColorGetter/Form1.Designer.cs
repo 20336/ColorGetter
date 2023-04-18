@@ -38,6 +38,14 @@
             this.txtB = new System.Windows.Forms.TextBox();
             this.btnRandom = new System.Windows.Forms.Button();
             this.lstColors = new System.Windows.Forms.ListBox();
+            this.txtCompB = new System.Windows.Forms.TextBox();
+            this.txtCompG = new System.Windows.Forms.TextBox();
+            this.txtCompR = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.compColorBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -126,11 +134,85 @@
             this.lstColors.TabIndex = 9;
             this.lstColors.SelectedIndexChanged += new System.EventHandler(this.lstColors_SelectedIndexChanged);
             // 
+            // txtCompB
+            // 
+            this.txtCompB.Location = new System.Drawing.Point(729, 58);
+            this.txtCompB.Name = "txtCompB";
+            this.txtCompB.Size = new System.Drawing.Size(31, 20);
+            this.txtCompB.TabIndex = 15;
+            // 
+            // txtCompG
+            // 
+            this.txtCompG.Location = new System.Drawing.Point(692, 58);
+            this.txtCompG.Name = "txtCompG";
+            this.txtCompG.Size = new System.Drawing.Size(31, 20);
+            this.txtCompG.TabIndex = 14;
+            // 
+            // txtCompR
+            // 
+            this.txtCompR.Location = new System.Drawing.Point(655, 58);
+            this.txtCompR.Name = "txtCompR";
+            this.txtCompR.Size = new System.Drawing.Size(31, 20);
+            this.txtCompR.TabIndex = 13;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(614, 61);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(30, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "RGB";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(655, 32);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(105, 20);
+            this.textBox4.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(614, 35);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(26, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Hex";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(677, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 13);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Hex";
+            // 
+            // compColorBox
+            // 
+            this.compColorBox.BackColor = System.Drawing.Color.White;
+            this.compColorBox.Location = new System.Drawing.Point(617, 84);
+            this.compColorBox.Multiline = true;
+            this.compColorBox.Name = "compColorBox";
+            this.compColorBox.ReadOnly = true;
+            this.compColorBox.Size = new System.Drawing.Size(144, 348);
+            this.compColorBox.TabIndex = 17;
+            this.compColorBox.Text = "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(617, 440);
+            this.ClientSize = new System.Drawing.Size(773, 440);
+            this.Controls.Add(this.compColorBox);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtCompB);
+            this.Controls.Add(this.txtCompG);
+            this.Controls.Add(this.txtCompR);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.lstColors);
             this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.txtB);
@@ -160,6 +242,14 @@
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.Button btnRandom;
         private System.Windows.Forms.ListBox lstColors;
+        private System.Windows.Forms.TextBox txtCompB;
+        private System.Windows.Forms.TextBox txtCompG;
+        private System.Windows.Forms.TextBox txtCompR;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox compColorBox;
     }
 }
 
